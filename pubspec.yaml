@@ -1,0 +1,67 @@
+name: trace_ar
+description: "TraceAR - Professional AR Tracing App for iOS and Android."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # AR Plugins
+  ar_flutter_plugin: ^0.7.3
+  vector_math: ^2.1.4
+
+  # State Management & DI
+  provider: ^6.1.1
+  permission_handler: ^10.4.5
+
+  # Local Database & Storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  shared_preferences: ^2.2.2
+
+  # Image & Camera
+  image: ^4.1.3
+  image_picker: ^1.0.7
+  camera: ^0.10.5+5
+
+  # Sensors
+  sensors_plus: ^4.0.2
+  geolocator: ^9.0.2
+
+  # Utilities
+  uuid: ^4.3.3
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.6
+
+  # In-app Purchase (stub for offline build)
+  in_app_purchase: ^3.1.9
+
+  # Firebase (optional - requires google-services.json)
+  # Uncomment and add google-services.json to android/app/ to enable
+  # firebase_core: ^2.24.2
+  # firebase_auth: ^4.16.0
+  # cloud_firestore: ^4.14.0
+  # firebase_storage: ^11.6.0
+  # google_sign_in: ^6.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+dependency_overrides:
+  permission_handler: ^11.3.1
+  permission_handler_android: ^12.0.3
