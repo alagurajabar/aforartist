@@ -1,6 +1,7 @@
 # A for Artist
 
-A Flutter-based Augmented Reality (AR) application that showcases real‑time object detection and tracking using the device camera.
+ lets anyone turn their smartphone camera into a canvas.
+Point the device at any surface, tap the on‑screen controls, and paint or draw directly in the augmented‑reality view. The app uses on‑device machine‑learning to detect objects and track the scene, so your sketches stay anchored as you move. No special hardware is required—just a modern Android or iOS phone. Perfect for quick visual brainstorming, teaching, or just having fun with AR‑enabled art.
 
 ---
 
