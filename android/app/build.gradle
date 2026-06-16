@@ -1,0 +1,53 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.tracear.app"
+    compileSdk = 35
+    ndkVersion = "27.0.12077973"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.tracear.app"
+        minSdk = 24
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    // ARCore
+    implementation 'com.google.ar:core:1.42.0'
+}
