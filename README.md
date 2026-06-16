@@ -36,7 +36,7 @@ Point the device at any surface, tap the on‑screen controls, and paint or draw
 1. **Clone the repository**
    ```bash
    git clone <repo‑url>
-   cd trace_ar
+   cd aforartist
    ```
 2. **Install Flutter dependencies**
    ```bash
